@@ -1,5 +1,6 @@
-import 'package:fine_arts/admin/tab_bar.dart';
+import 'package:fine_arts/admin/admin_tab_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class OrgDetails extends StatefulWidget {
@@ -20,35 +21,35 @@ class _OrgDetailsState extends State<OrgDetails> {
             child: Row(
               children: [
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 GestureDetector(
                     onTap: () {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
-                          return TabBarMain();
+                          return AdminTabBar();
                         },
                       ));
                     },
                     child: Icon(
                       Icons.arrow_back_ios_new,
                       color: Colors.black,
-                      size: 30,
+                      size: 30.sp,
                     )),
                 SizedBox(
-                  width: 110,
+                  width: 110.w,
                 ),
                 Text('Organizer',
-                    style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold))
+                    style: TextStyle(fontSize: 19.sp, fontWeight: FontWeight.bold))
               ],
             ),
           ),
           SizedBox(
-            height: 60,
+            height: 60.h,
           ),
           Container(
-            height: 80,
-            width: 80,
+            height: 80.h,
+            width: 80.w,
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(50),
@@ -57,14 +58,14 @@ class _OrgDetailsState extends State<OrgDetails> {
                     fit: BoxFit.cover)),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           Text(
             'Name',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w500),
           ),
           SizedBox(
-            height: 80,
+            height: 80.h,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 30,bottom: 5),
@@ -86,7 +87,7 @@ class _OrgDetailsState extends State<OrgDetails> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 30,bottom: 5),
@@ -107,7 +108,7 @@ class _OrgDetailsState extends State<OrgDetails> {
             ),
           ),
           SizedBox(
-            height: 120,
+            height: 120.h,
           ),
            Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -115,12 +116,12 @@ class _OrgDetailsState extends State<OrgDetails> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return TabBarMain();
+                    return AdminTabBar();
                   },));
                 },
                 child: Container(
-                  height: 50,
-                  width: 150,
+                  height: 50.h,
+                  width: 150.w,
                   decoration: BoxDecoration(
                       color: HexColor('#0C5600'),
                       borderRadius: BorderRadius.circular(5)),
@@ -130,16 +131,16 @@ class _OrgDetailsState extends State<OrgDetails> {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 17),
+                        fontSize: 17.sp),
                   )),
                 ),
               ),
               SizedBox(
-                width: 20,
+                width: 20.w,
               ),
               Container(
-                height: 50,
-                width: 150,
+                height: 50.h,
+                width: 150.w,
                 decoration: BoxDecoration(
                     color: HexColor('#AE2A0D'),
                     borderRadius: BorderRadius.circular(5)),
@@ -149,7 +150,7 @@ class _OrgDetailsState extends State<OrgDetails> {
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 17),
+                      fontSize: 17.sp),
                 )),
               )
             ],

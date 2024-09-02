@@ -1,15 +1,16 @@
-import 'package:fine_arts/admin/tab_bar.dart';
+import 'package:fine_arts/admin/admin_tab_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class AdminLogin extends StatefulWidget {
+  const AdminLogin({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<AdminLogin> createState() => _AdminLoginState();
 }
 
-class _LoginState extends State<Login> {
+class _AdminLoginState extends State<AdminLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,7 @@ class _LoginState extends State<Login> {
             padding: const EdgeInsets.only(bottom: 60),
             child: Text(
               'Login',
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 30.sp, fontWeight: FontWeight.bold),
             ),
           ),
           Padding(
@@ -34,7 +35,7 @@ class _LoginState extends State<Login> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -47,17 +48,17 @@ class _LoginState extends State<Login> {
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 30.h,
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return TabBarMain();
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                return AdminTabBar();
               },));
             },
             child: Container(
-              height: 50,
-              width: 340,
+              height: 50.h,
+              width: 340.w,
               decoration: BoxDecoration(
                   color: HexColor('#204563'),
                   borderRadius: BorderRadius.circular(5)),
@@ -66,7 +67,7 @@ class _LoginState extends State<Login> {
                   'Login',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 20.sp,
                       fontWeight: FontWeight.bold),
                 ),
               ),

@@ -1,14 +1,15 @@
+import 'package:fine_arts/admin/org_details.dart';
 import 'package:fine_arts/admin/std_details.dart';
 import 'package:flutter/material.dart';
 
-class ListView1 extends StatefulWidget {
-  const ListView1({super.key});
+class OrgParticipantList extends StatefulWidget {
+  const OrgParticipantList({super.key});
 
   @override
-  State<ListView1> createState() => _ListView1State();
+  State<OrgParticipantList> createState() => _OrgParticipantListState();
 }
 
-class _ListView1State extends State<ListView1> {
+class _OrgParticipantListState extends State<OrgParticipantList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +20,7 @@ class _ListView1State extends State<ListView1> {
             child: Row(
               children: [
                 Text(
-                  'Student List',
+                  'Participant List',
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                 )
               ],
@@ -27,7 +28,7 @@ class _ListView1State extends State<ListView1> {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: 20,
+              itemCount: 3,
               itemBuilder: (context, index) {
                 return Card(
                   child: Padding(
@@ -36,7 +37,7 @@ class _ListView1State extends State<ListView1> {
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(
                           builder: (context) {
-                            return StdDetails();
+                            return OrgDetails();
                           },
                         ));
                       },

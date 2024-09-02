@@ -1,5 +1,6 @@
-import 'package:fine_arts/admin/tab_bar.dart';
+import 'package:fine_arts/admin/admin_tab_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class StdDetails extends StatefulWidget {
@@ -20,35 +21,36 @@ class _StdDetailsState extends State<StdDetails> {
             child: Row(
               children: [
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 GestureDetector(
                     onTap: () {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
-                          return TabBarMain();
+                          return AdminTabBar();
                         },
                       ));
                     },
                     child: Icon(
                       Icons.arrow_back_ios_new,
                       color: Colors.black,
-                      size: 30,
+                      size: 30.sp,
                     )),
                 SizedBox(
-                  width: 90,
+                  width: 90.w,
                 ),
                 Text('Student Detail',
-                    style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold))
+                    style:
+                        TextStyle(fontSize: 19.sp, fontWeight: FontWeight.bold))
               ],
             ),
           ),
           SizedBox(
-            height: 60,
+            height: 60.h,
           ),
           Container(
-            height: 80,
-            width: 80,
+            height: 80.h,
+            width: 80.w,
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(50),
@@ -57,11 +59,11 @@ class _StdDetailsState extends State<StdDetails> {
                     fit: BoxFit.cover)),
           ),
           SizedBox(
-            height: 20,
+            height: 20.h,
           ),
           Text(
             'Name',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w500),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 80, top: 30),
@@ -72,36 +74,36 @@ class _StdDetailsState extends State<StdDetails> {
                   children: [
                     buildProfileDetailRow('ID Number'),
                     SizedBox(
-                      height: 20,
+                      height: 20.h,
                     ),
                     buildProfileDetailRow('Department'),
                     SizedBox(
-                      height: 20,
+                      height: 20.h,
                     ),
                     buildProfileDetailRow('Phone Number'),
                     SizedBox(
-                      height: 20,
+                      height: 20.h,
                     ),
                     buildProfileDetailRow('Location')
                   ],
                 ),
                 SizedBox(
-                  width: 40,
+                  width: 40.w,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     buildProfileDetailRow2('0000000'),
                     SizedBox(
-                      height: 20,
+                      height: 20.h,
                     ),
                     buildProfileDetailRow2('Bsc Computer'),
                     SizedBox(
-                      height: 20,
+                      height: 20.h,
                     ),
                     buildProfileDetailRow2('98567472'),
                     SizedBox(
-                      height: 20,
+                      height: 20.h,
                     ),
                     buildProfileDetailRow2('Collage')
                   ],
@@ -110,20 +112,22 @@ class _StdDetailsState extends State<StdDetails> {
             ),
           ),
           SizedBox(
-            height: 170,
+            height: 170.h,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return TabBarMain();
-                  },));
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return AdminTabBar();
+                    },
+                  ));
                 },
                 child: Container(
-                  height: 50,
-                  width: 150,
+                  height: 50.h,
+                  width: 150.w,
                   decoration: BoxDecoration(
                       color: HexColor('#0C5600'),
                       borderRadius: BorderRadius.circular(5)),
@@ -133,16 +137,16 @@ class _StdDetailsState extends State<StdDetails> {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 17),
+                        fontSize: 17.sp),
                   )),
                 ),
               ),
               SizedBox(
-                width: 20,
+                width: 20.w,
               ),
               Container(
-                height: 50,
-                width: 150,
+                height: 50.h,
+                width: 150.w,
                 decoration: BoxDecoration(
                     color: HexColor('#AE2A0D'),
                     borderRadius: BorderRadius.circular(5)),
@@ -152,7 +156,7 @@ class _StdDetailsState extends State<StdDetails> {
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 17),
+                      fontSize: 17.sp),
                 )),
               )
             ],
@@ -164,14 +168,13 @@ class _StdDetailsState extends State<StdDetails> {
 
   Widget buildProfileDetailRow(String label) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment
-          .spaceBetween, // Aligns label to start and value to end
+      mainAxisAlignment: MainAxisAlignment.spaceBetween, // Aligns label to start and value to end
       children: [
         Text(
           label,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 16,
+            fontSize: 16.sp,
           ),
         ),
       ],
@@ -180,14 +183,13 @@ class _StdDetailsState extends State<StdDetails> {
 
   Widget buildProfileDetailRow2(String label) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment
-          .spaceBetween, // Aligns label to start and value to end
+      mainAxisAlignment: MainAxisAlignment.spaceBetween, // Aligns label to start and value to end
       children: [
         Text(
           label,
           style: TextStyle(
             fontWeight: FontWeight.w200,
-            fontSize: 16,
+            fontSize: 16.sp,
           ),
         ),
       ],
