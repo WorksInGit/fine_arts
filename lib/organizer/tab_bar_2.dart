@@ -1,4 +1,3 @@
-import 'package:fine_arts/admin/add_event.dart';
 import 'package:fine_arts/organizer/org_tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -1,5 +1,3 @@
-import 'package:fine_arts/admin/std_details.dart';
-import 'package:fine_arts/organizer/assigned.dart';
 import 'package:fine_arts/organizer/org_appeal.dart';
 import 'package:fine_arts/organizer/tab_bar_2.dart';
 import 'package:flutter/material.dart';

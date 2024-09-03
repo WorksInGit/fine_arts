@@ -1,5 +1,4 @@
 import 'package:fine_arts/admin/org_details.dart';
-import 'package:fine_arts/admin/std_details.dart';
 import 'package:flutter/material.dart';
 
 class OrgParticipantList extends StatefulWidget {

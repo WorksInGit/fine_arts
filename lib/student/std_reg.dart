@@ -1,5 +1,3 @@
-import 'package:fine_arts/organizer/assigned.dart';
-import 'package:fine_arts/organizer/org_tab_bar.dart';
 import 'package:fine_arts/student/std_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

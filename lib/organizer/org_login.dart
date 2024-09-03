@@ -1,5 +1,3 @@
-import 'package:fine_arts/admin/admin_tab_bar.dart';
-import 'package:fine_arts/main.dart';
 import 'package:fine_arts/organizer/org_reg.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

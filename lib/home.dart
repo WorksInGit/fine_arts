@@ -1,4 +1,3 @@
-import 'package:fine_arts/admin/add_event.dart';
 import 'package:fine_arts/admin/admin_login.dart';
 import 'package:fine_arts/organizer/org_login.dart';
 import 'package:fine_arts/student/std_login.dart';

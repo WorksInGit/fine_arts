@@ -1,7 +1,6 @@
 import 'package:fine_arts/admin/add_event.dart';
 import 'package:fine_arts/admin/org_details.dart';
 import 'package:fine_arts/admin/std_details.dart';
-import 'package:fine_arts/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';

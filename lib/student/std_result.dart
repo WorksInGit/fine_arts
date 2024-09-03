@@ -1,4 +1,3 @@
-import 'package:fine_arts/student/std_event.dart';
 import 'package:fine_arts/student/std_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

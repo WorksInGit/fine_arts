@@ -1,8 +1,4 @@
-import 'package:fine_arts/admin/add_event.dart';
-import 'package:fine_arts/admin/admin_tab_bar.dart';
-import 'package:fine_arts/organizer/assigned.dart';
 import 'package:fine_arts/organizer/org_tab_bar.dart';
-import 'package:fine_arts/organizer/org_reg.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
